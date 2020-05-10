@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=civictechindexadmin
+POSTGRES_USER=bcpPYrzWgclOlmAVDcLhuFBsWWDzageb
+POSTGRES_PASSWORD=f0G3UZ45c1EEUCaiQeLVS4VdaXv3czbpPtfnr07yREhmlW1v1S62baGRFAle9vJo
