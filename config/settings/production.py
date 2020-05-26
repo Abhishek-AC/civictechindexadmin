@@ -1,4 +1,7 @@
 import django_heroku
+# Activate Django-Heroku.
+django_heroku.settings(locals())
+
 from .base import *  # noqa
 from .base import env
 
@@ -174,5 +177,3 @@ LOGGING = {
 
 # Your stuff...
 # ------------------------------------------------------------------------------
-# Activate Django-Heroku.
-django_heroku.settings(locals())
