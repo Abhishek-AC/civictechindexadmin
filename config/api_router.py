@@ -1,14 +1,15 @@
 from django.conf import settings
 from rest_framework.routers import DefaultRouter, SimpleRouter
 
-from civictechindexadmin.users.api.views import UserViewSet
+from civictechindexadmin.data.api.views import OrganizationViewSet, LinkViewSet
 
 if settings.DEBUG:
     router = DefaultRouter()
 else:
     router = SimpleRouter()
 
-router.register("users", UserViewSet)
+router.register("organizations", OrganizationViewSet)
+router.register("links", LinkViewSet)
 
 
 app_name = "api"
