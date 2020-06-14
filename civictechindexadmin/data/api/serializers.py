@@ -6,10 +6,12 @@ from civictechindexadmin.data.models import Organization, Link
 class OrganizationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Organization
-        fields = '__all__'
+        fields = ['id', 'name', 'location', 'image_url', 'links', 'parent_organization' ]
+        depth = 1
 
 
 class LinkSerializer(serializers.ModelSerializer):
     class Meta:
         model = Link
-        fields = '__all__'
+        fields = ['id', 'link_type', 'url', 'organization', ]
+        depth = 1
